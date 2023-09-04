@@ -1,5 +1,5 @@
 <div class="dropdown">
-    <div class="dropdown-option-selected" (click)="showOptionSelected()" [attr.aria-label]="selectedOption || placeholder">
+    <div class="dropdown-option-selected" [class.placeholder]="!selectedOption" (click)="showOptionSelected()" [attr.aria-label]="selectedOption || placeholder">
         {{selectedOption || placeholder}}
         <span class="chevron-icon-container" *ngIf="panelOpened">
             <img class="icons" src="../../assets/icon-open.png" alt="open-icon">
