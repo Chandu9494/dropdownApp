@@ -1,0 +1,16 @@
+<div class="dropdown">
+    <div class="dropdown-option-selected" (click)="showOptionSelected()" [attr.aria-label]="selectedOption || placeholder">
+        {{selectedOption || placeholder}}
+        <span class="chevron-icon-container" *ngIf="panelOpened">
+            <img class="icons" src="../../assets/icon-open.png" alt="open-icon">
+        </span>
+        <span class="chevron-icon-container" *ngIf="!panelOpened">
+            <img class="icons" src="../../assets/icon-close.png" alt="close-icon">
+        </span>
+    </div>
+    <div class="dropdown-all-options" *ngIf="panelOpened">
+        <div class="dropdown-items" *ngFor="let opt of options, let i=index" (click)="handleOptionChange(opt)" [attr.aria-label]="opt.label">
+            {{opt.label}}
+        </div>
+    </div>
+    

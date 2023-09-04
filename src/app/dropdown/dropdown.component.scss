@@ -1,0 +1,50 @@
+.icons {
+    height: 20px;
+    width: 20px;
+    align-items: end;
+}
+
+.chevron-icon-container {
+    position: relative;
+    top: 5px;
+    left: 70%;
+}
+
+.dropdown {
+    height: 100%;
+    width: 100%;
+
+    &-option-selected {
+        border: 1px solid #d3d3d3;
+        border-radius: 5px;
+        width: 45%;
+        height: 32px;
+    }
+
+    &-all-options {
+        position: relative;
+        top: 5px;
+        max-height: 224px;
+        border: 1px solid #d3d3d3;
+        border-radius: 5px;
+        overflow-y: scroll;
+        width: 45%;
+    }
+
+    &-items {
+        height: 32px;
+    }
+
+    &-items:hover{
+        background-color: #D4F1F9;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: gray;
+    border-radius: 5px;
+}
