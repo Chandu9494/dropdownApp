@@ -1,10 +1,10 @@
 <div class="dropdown">
     <div class="dropdown-option-selected" [class.placeholder]="!selectedOption" (click)="showOptionSelected()" [attr.aria-label]="selectedOption || placeholder">
         {{selectedOption || placeholder}}
-        <span class="chevron-icon-container" *ngIf="panelOpened">
+        <span class="chevron-icon-container open-icon" *ngIf="panelOpened">
             <img class="icons" src="../../assets/icon-open.png" alt="open-icon">
         </span>
-        <span class="chevron-icon-container" *ngIf="!panelOpened">
+        <span class="chevron-icon-container close-icon" *ngIf="!panelOpened">
             <img class="icons" src="../../assets/icon-close.png" alt="close-icon">
         </span>
     </div>
